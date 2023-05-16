@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+html {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    margin: 0%;
+    animation-name: muchocolor;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes muchocolor {
+    1% {
+        background-color: rgb(43, 0, 255);
+    }
+    2% {
+        background-color: rgb(18, 92, 211);
+    }
+    3% {
+        background-color: rgb(27, 139, 183);
+    }
+    4% {
+        background-color: rgb(22, 182, 200);
+    }
+    5% {
+        background-color: rgb(43, 188, 149);
+    }
+    6% {
+        background-color: rgb(54, 180, 84);
+    }
+    7% {
+        background-color: rgb(25, 166, 37);
+    }
+    8% {
+        background-color: rgb(135, 214, 24);
+    }
+    9% {
+        background-color: rgb(186, 194, 24);
+    }
+    10% {
+        background-color: rgb(214, 96, 32);
+    }
+    11% {
+        background-color: rgb(196, 46, 23);
+    }
+    12% {
+        background-color: rgb(198, 20, 20);
+    }
+    13% {
+        background-color: rgb(209, 9, 109);
+    }
+    14% {
+        background-color: rgb(174, 17, 174);
+    }
+    15% {
+        background-color: rgb(179, 0, 255);
+    }
+    16% {
+        background-color: rgb(128, 0, 255);
+    }
+    17% {
+        background-color: rgb(12, 6, 186);
+    }
+    18% {
+        background-color: rgb(11, 50, 192);
+    }
+    19% {
+        background-color: rgb(12, 94, 210);
+    }
+    20% {
+        background-color: rgb(0, 217, 255);
+    }
+    21% {
+        background-color: rgb(0, 238, 255);
+    }
+    22% {
+        background-color: rgb(0, 255, 191);
+    }
+    23% {
+        background-color: rgb(0, 255, 115);
+    }
+    24% {
+        background-color: rgb(0, 255, 94);
+    }
+    25% {
+        background-color: rgb(11, 176, 25);
+    }
+    26% {
+        background-color: rgb(0, 255, 115);
+    }
+    27% {
+        background-color: rgb(0, 255, 162);
+    }
+    28% {
+        background-color: rgb(72, 255, 0);
+    }
+    29% {
+        background-color: rgb(0, 255, 115);
+    }
+    30% {
+        background-color: rgb(0, 255, 162);
+    }
+    31% {
+        background-color: rgb(72, 255, 0);
+    }
+    32% {
+        background-color: rgb(0, 255, 115);
+    }
+    33% {
+        background-color: rgb(0, 255, 162);
+    }
+    34% {
+        background-color: rgb(72, 255, 0);
+    }
+    35% {
+        background-color: rgb(0, 255, 115);
+    }
+    36% {
+        background-color: rgb(0, 255, 162);
+    }
+    37% {
+        background-color: rgb(72, 255, 0);
+    }
+    38% {
+        background-color: rgb(0, 255, 115);
+    }
+    39% {
+        background-color: rgb(0, 255, 162);
+    }
+    40% {
+        background-color: rgb(72, 255, 0);
+    }
+    41% {
+        background-color: rgb(0, 255, 115);
+    }
+    42% {
+        background-color: rgb(0, 255, 162);
+    }
+    43% {
+        background-color: rgb(72, 255, 0);
+    }
+    44% {
+        background-color: rgb(0, 255, 115);
+    }
+    45% {
+        background-color: rgb(0, 255, 162);
+    }
+    46% {
+        background-color: rgb(72, 255, 0);
+    }
+    47% {
+        background-color: rgb(0, 255, 115);
+    }
+    48% {
+        background-color: rgb(0, 255, 162);
+    }
+    49% {
+        background-color: rgb(72, 255, 0);
+    }
+    50% {
+        background-color: rgb(0, 255, 115);
+    }
+    51% {
+        background-color: rgb(0, 255, 162);
+    }
+    52% {
+        background-color: rgb(72, 255, 0);
+    }
+    53% {
+        background-color: rgb(0, 255, 115);
+    }
+    54% {
+        background-color: rgb(0, 255, 162);
+    }
+    55% {
+        background-color: rgb(72, 255, 0);
+    }
+    56% {
+        background-color: rgb(0, 255, 115);
+    }
+    57% {
+        background-color: rgb(0, 255, 162);
+    }
+    58% {
+        background-color: rgb(72, 255, 0);
+    }
+    59% {
+        background-color: rgb(0, 255, 115);
+    }
+    60% {
+        background-color: rgb(0, 255, 162);
+    }
+    61% {
+        background-color: rgb(72, 255, 0);
+    }
+    62% {
+        background-color: rgb(0, 255, 115);
+    }
+    63% {
+        background-color: rgb(0, 255, 162);
+    }
+    64% {
+        background-color: rgb(72, 255, 0);
+    }
+    65% {
+        background-color: rgb(0, 255, 115);
+    }
+    66% {
+        background-color: rgb(0, 255, 162);
+    }
+    67% {
+        background-color: rgb(72, 255, 0);
+    }
+    68% {
+        background-color: rgb(0, 255, 115);
+    }
+    69% {
+        background-color: rgb(0, 255, 162);
+    }
+    70% {
+        background-color: rgb(72, 255, 0);
+    }
+    71% {
+        background-color: rgb(0, 255, 115);
+    }
+    72% {
+        background-color: rgb(0, 255, 162);
+    }
+    73% {
+        background-color: rgb(72, 255, 0);
+    }
+    74% {
+        background-color: rgb(0, 255, 115);
+    }
+    75% {
+        background-color: rgb(0, 255, 162);
+    }
+    76% {
+        background-color: rgb(72, 255, 0);
+    }
+    77% {
+        background-color: rgb(0, 255, 115);
+    }
+    78% {
+        background-color: rgb(0, 255, 162);
+    }
+    79% {
+        background-color: rgb(72, 255, 0);
+    }
+    80% {
+        background-color: rgb(0, 255, 115);
+    }
+    81% {
+        background-color: rgb(0, 255, 162);
+    }
+    82% {
+        background-color: rgb(72, 255, 0);
+    }
+    83% {
+        background-color: rgb(0, 255, 115);
+    }
+    84% {
+        background-color: rgb(0, 255, 162);
+    }
+    85% {
+        background-color: rgb(72, 255, 0);
+    }
+    86% {
+        background-color: rgb(0, 255, 115);
+    }
+    87% {
+        background-color: rgb(0, 255, 162);
+    }
+    88% {
+        background-color: rgb(72, 255, 0);
+    }
+    89% {
+        background-color: rgb(0, 255, 115);
+    }
+    90% {
+        background-color: rgb(0, 255, 162);
+    }
+    91% {
+        background-color: rgb(72, 255, 0);
+    }
+    92% {
+        background-color: rgb(0, 255, 115);
+    }
+    93% {
+        background-color: rgb(0, 255, 162);
+    }
+    94% {
+        background-color: rgb(72, 255, 0);
+    }
+    95% {
+        background-color: rgb(0, 255, 115);
+    }
+    96% {
+        background-color: rgb(0, 255, 162);
+    }
+    97% {
+        background-color: rgb(72, 255, 0);
+    }
+    98% {
+        background-color: rgb(0, 255, 115);
+    }
+    99% {
+        background-color: rgb(0, 255, 162);
+    }
+    100% {
+        background-color: rgb(72, 255, 0);
+    }
+}
+
+#header {
+    /* propiedad que permite alterar la altura*/
+    height: 10vh;
+    border-style: dashed;
+}
+
+#header h1 {
+    color: white;
+    margin: 0;
+    padding: 0 20%;
+    font-size: 50px;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 120px;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 130px;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fother {
+    text-align: center;
+    color: rgba(194, 194, 194, 0.986);
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fother a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.756);
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .column-2 {
+        width: 100%;
+        padding: 20%;
+        padding-top: 20px;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+        padding-top: 0%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #bfbfbf;
+    appearance: none;
+}
+
+option:hover {
+    background-color: #ddd;
+}
+
+option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+option:disabled {
+    color: gray;
+}
+
+p {
+    font-size: 18px;
+}
+
+.search-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: rgba(255, 255, 255, 0.715);
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    /* Rojo */
+    25% {
+        color: rgb(0, 255, 0);
+    }
+    /* Verde */
+    50% {
+        color: rgb(0, 0, 255);
+    }
+    /* Azul */
+    75% {
+        color: rgb(255, 255, 0);
+    }
+    /* Amarillo */
+    100% {
+        color: rgb(255, 0, 255);
+    }
+    /* Magenta */
+}
+
+#colorful-paragraph {
+    animation: colorChange 2s infinite;
+    /* Cambiar el número para modificar la velocidad */
+}
+
+
+/* 
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+section:nth-of-type(odd) {
+    animation: slide-in-left 1s ease-out;
+}
+
+section:nth-of-type(even) {
+    animation: slide-in-left 1s ease-out;
+} */
