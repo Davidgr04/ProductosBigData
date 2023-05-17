@@ -20,8 +20,6 @@ resultados = mycursor.fetchall()
 
 # funciones que intentan printar lo indicado
 
-
-
 productos = {}
 
 # # Lee el csv
@@ -35,34 +33,13 @@ with open('productos.csv', 'r') as archivo:
         descripcion = fila[1]
         precio = float(fila[2])
         categoria = fila[3]
+        # esta linea es la que guarda la descripcion el precio y la categoria en el diccionario "productos"
         productos[nombre] = {'descripcion': descripcion, 'precio': precio, 'categoria': categoria}
-
-# # Esto es para printar todos los productos del csv
-
-nombres_productos = []
-
-for producto in productos:
-    nombres_productos.append(producto)
-
-df = pd.read_csv("productos.csv")
-nombres = df["nombre"].tolist()
-
-nombres_productos = []
-
-for producto in productos:
-    nombres_productos.append(producto)
-
-# def buscar(nombre):
-#     resultados_desc = mostrar_descripcion(nombre)
-#     resultados_precio = mostrar_precio(nombre)
-#     resultados_cat = mostrar_categoria(nombre)
-#     return resultados_desc, resultados_precio, resultados_cat
 
 @app.route('/', methods=['GET', 'POST'])
 def buscar():
     if request.method == 'POST':
         nombre = request.form.get('nombre')
-        # print(nombre)
         # Ejecutar la consulta SQL
         cursor_1 = mydb.cursor()
         cursor_1.execute(f"SELECT descripcion FROM productos where nombre = '{nombre}'")
@@ -88,15 +65,13 @@ def buscar():
         }
         return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat)
     else:
-        cursor = mydb.cursor()
-        cursor.execute(f"SELECT nombre FROM productos")
-         # Obtener los resultados de la consulta
-        resultados_GET = cursor.fetchall()
+        nombres_productos = list(productos.keys())
         data = {
             'titulo': 'Productos',
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:'
         }
-        return render_template('index.html',data=data,nombres=resultados_GET, )
+        return render_template('index.html', data=data, nombres=nombres_productos)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
