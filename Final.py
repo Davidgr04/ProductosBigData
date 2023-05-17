@@ -1,9 +1,4 @@
-# # fruta = "iPhone 12"
-# # fruta2= "Manzana"
-# # producto = [{"nombre": fruta, "Tipo": "Fruta", "Precio": "0,99"},{"nombre": fruta2, "Tipo": "Fruta", "Precio": "2,99"}]
-# # print(producto)
-# # print(type(producto))
-# # print(producto[1])
+
 from flask import Flask, render_template, request
 import csv
 import mysql.connector 
@@ -108,9 +103,3 @@ def buscar():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
-    #     cursor = mydb.cursor()
-    #     cursor.execute(f"SELECT nombre, descripcion, precio, categoría FROM productos where nombre = '{nombre}'")
-
-    #     # Obtener los resultados de la consulta
-    #     resultados_POST = cursor.fetchall()
-    #     print(resultados_POST)
