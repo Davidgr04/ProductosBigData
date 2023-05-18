@@ -5,6 +5,7 @@ import mysql.connector
 app = Flask(__name__)
 
 # conecta bd
+# uf3 ultima practica como hacer para poner archivo sql en visualstudio para q lo pueda ver.
 mydb = mysql.connector.connect(
   user="root",
   password="9b687h3b",
