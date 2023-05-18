@@ -1,24 +1,24 @@
-
 from flask import Flask, render_template, request
 import csv
-import mysql.connector 
-import pandas as pd
+import mysql.connector
 
 app = Flask(__name__)
 
+# conecta bd
 mydb = mysql.connector.connect(
   user="root",
   password="9b687h3b",
   host="localhost",
   database="productos"
 )
+# crea un objeto para moverse en mydb
 mycursor = mydb.cursor()
 
 mycursor.execute("SELECT * FROM productos")
 
 resultados = mycursor.fetchall()
 
-# funciones que intentan printar lo indicado
+# Crea el diccionario
 
 productos = {}
 
@@ -26,7 +26,6 @@ productos = {}
 
 with open('productos.csv', 'r') as archivo:
     lector_csv = csv.reader(archivo)
-    # Ignora la primera fila (encabezados)
     next(lector_csv)
     for fila in lector_csv:
         nombre = fila[0]
@@ -65,6 +64,7 @@ def buscar():
         }
         return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat)
     else:
+        # crea una lista llamada que contiene todos los nombres de productos del diccionario productos
         nombres_productos = list(productos.keys())
         data = {
             'titulo': 'Productos',
