@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
   user="root",
   password="9b687h3b",
   host="localhost",
-  database="productos"
+  database="productos_2"
 )
 # crea un objeto para moverse en mydb
 mycursor = mydb.cursor()
@@ -33,8 +33,9 @@ with open('productos.csv', 'r') as archivo:
         descripcion = fila[1]
         precio = float(fila[2])
         categoria = fila[3]
+        img = fila[4]
         # esta linea es la que guarda la descripcion el precio y la categoria en el diccionario "productos"
-        productos[nombre] = {'descripcion': descripcion, 'precio': precio, 'categoria': categoria}
+        productos[nombre] = {'descripcion': descripcion, 'precio': precio, 'categoria': categoria, 'img': img,}
 
 @app.route('/', methods=['GET', 'POST'])
 def buscar():
@@ -59,13 +60,17 @@ def buscar():
         resultados_cat = cat[0][0]
         print(resultados_cat)
 
-        
+        cursor_4 = mydb.cursor()
+        cursor_4.execute(f"SELECT categoría FROM productos where nombre = '{nombre}'")
+        img = cursor_3.fetchall()
+        resultados_img = img[0][0]
+        print(resultados_img)
 
         data = {
             'titulo': 'Productos',
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:',
         }
-        return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat)
+        return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat,img=resultados_img)
     else:
         # crea una lista llamada que contiene todos los nombres de productos del diccionario productos
         nombres_productos = list(productos.keys())
