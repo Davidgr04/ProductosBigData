@@ -8,7 +8,7 @@ app = Flask(__name__)
 # uf3 ultima practica como hacer para poner archivo sql en visualstudio para q lo pueda ver.
 mydb = mysql.connector.connect(
   user="root",
-  password="9b687h3b",
+  password="contraseña",
   host="localhost",
   database="productos"
 )
