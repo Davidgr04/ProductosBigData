@@ -69,6 +69,7 @@ def buscar():
         data = {
             'titulo': 'Productos',
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:',
+            'img_error': "Imagen de el producto : '{nombre}'"
         }
         return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat,img=resultados_img)
     else:
@@ -76,7 +77,8 @@ def buscar():
         nombres_productos = list(productos.keys())
         data = {
             'titulo': 'Productos',
-            'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:'
+            'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:',
+            'img_error': "Imagen de el producto : '{nombre}'"
         }
         return render_template('index.html', data=data, nombres=nombres_productos)
 

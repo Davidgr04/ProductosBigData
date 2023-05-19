@@ -1,7 +1,3 @@
-/*
--- Query: select * from productos
--- Date: 2023-05-17 09:52
-*/
 INSERT INTO `` (`nombre`,`descripcion`,`precio`,`categoría`) VALUES ('iPhone 12','Smartphone de Apple',799,'Digital');
 INSERT INTO `` (`nombre`,`descripcion`,`precio`,`categoría`) VALUES ('Samsung Galaxy S21','Un poderoso teléfono Android',699,'Digital');
 INSERT INTO `` (`nombre`,`descripcion`,`precio`,`categoría`) VALUES ('MacBook Pro','La mejor computadora portátil de Apple',1499,'Electrónica');
