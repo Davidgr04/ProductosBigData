@@ -23,91 +23,91 @@ body {
         background-color: rgb(43, 0, 255);
     }
     2% {
-        background-color: rgb(18, 92, 211);
+        background-color: rgb(79, 146, 255);
     }
     3% {
-        background-color: rgb(27, 139, 183);
+        background-color: rgb(43, 0, 255);
     }
     4% {
-        background-color: rgb(22, 182, 200);
+        background-color: rgb(79, 146, 255);
     }
     5% {
-        background-color: rgb(43, 188, 149);
+        background-color: rgb(43, 0, 255);
     }
     6% {
-        background-color: rgb(54, 180, 84);
+        background-color: rgb(79, 146, 255);
     }
     7% {
-        background-color: rgb(25, 166, 37);
+        background-color: rgb(43, 0, 255);
     }
     8% {
-        background-color: rgb(135, 214, 24);
+        background-color: rgb(79, 146, 255);
     }
     9% {
-        background-color: rgb(186, 194, 24);
+        background-color: rgb(43, 0, 255);
     }
     10% {
-        background-color: rgb(214, 96, 32);
+        background-color: rgb(79, 146, 255);
     }
     11% {
-        background-color: rgb(196, 46, 23);
+        background-color: rgb(43, 0, 255);
     }
     12% {
-        background-color: rgb(198, 20, 20);
+        background-color: rgb(79, 146, 255);
     }
     13% {
-        background-color: rgb(209, 9, 109);
+        background-color: rgb(43, 0, 255);
     }
     14% {
-        background-color: rgb(174, 17, 174);
+        background-color: rgb(79, 146, 255);
     }
     15% {
-        background-color: rgb(179, 0, 255);
+        background-color: rgb(43, 0, 255);
     }
     16% {
-        background-color: rgb(128, 0, 255);
+        background-color: rgb(79, 146, 255);
     }
     17% {
         background-color: rgb(12, 6, 186);
     }
     18% {
-        background-color: rgb(11, 50, 192);
+        background-color: rgb(79, 146, 255);
     }
     19% {
-        background-color: rgb(12, 94, 210);
+        background-color: rgb(43, 0, 255);
     }
     20% {
-        background-color: rgb(0, 217, 255);
+        background-color: rgb(79, 146, 255);
     }
     21% {
-        background-color: rgb(0, 238, 255);
+        background-color: rgb(43, 0, 255);
     }
     22% {
-        background-color: rgb(0, 255, 191);
+        background-color: rgb(79, 146, 255);
     }
     23% {
-        background-color: rgb(0, 255, 115);
+        background-color: rgb(43, 0, 255);
     }
     24% {
-        background-color: rgb(0, 255, 94);
+        background-color: rgb(79, 146, 255);
     }
     25% {
-        background-color: rgb(11, 176, 25);
+        background-color: rgb(43, 0, 255);
     }
     26% {
-        background-color: rgb(0, 255, 115);
+        background-color: rgb(79, 146, 255);
     }
     27% {
-        background-color: rgb(0, 255, 162);
+        background-color: rgb(43, 0, 255);
     }
     28% {
-        background-color: rgb(72, 255, 0);
+        background-color: rgb(79, 146, 255)
     }
     29% {
-        background-color: rgb(0, 255, 115);
+        background-color: rgb(43, 0, 255);
     }
     30% {
-        background-color: rgb(0, 255, 162);
+        background-color: rgb(79, 146, 255);
     }
     31% {
         background-color: rgb(72, 255, 0);
@@ -465,6 +465,20 @@ p {
 
 .search-button:hover {
     background-color: rgba(255, 255, 255, 0.715);
+}
+
+.centrar-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 116vh;
+    /* Opcional: ajusta la altura según tus necesidades */
+}
+
+.desplazar-derecha {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @keyframes colorChange {

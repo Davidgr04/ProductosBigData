@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title style="color: rebeccapurple;">TodoProductos</title>
     <link rel="stylesheet" href="/static/main.css">
     <link rel="icon" href="/static/ico.png" type="image/x-icon">
     <script src="/js/main.js"></script>
@@ -13,31 +13,31 @@
 
 <body>
     <br>
-    <div id="header">
-        <h1 style="color: orange; text-align: center;">{{ data.titulo }}</h1>
+    <div style="padding-left: 23%;">
+        <img class="centrar-imagen" src="../static/logo_completo.png" alt="">
     </div>
-    <h2 style="color: rgb(0, 0, 0); padding-left: 6%;">{{ data.bienvenida }}</h2>
+    <h2 style="color: rgb(0, 0, 0); padding-left: 1%;">{{ data.bienvenida }}</h2>
 
     <div style="padding-left: 10px;">
         <tbody>
             <tr style="color: white;">
                 <form action="{{ url_for('buscar')}}" method="GET">
-                    <h3>Categoria del Producto</h3>
-                    <p id="">{{ categoria }}.</p>
-                    <h3>Descripcion del Producto</h3>
-                    <p id=""> {{ descripcion }}.</p>
-                    <h3>Precio del Producto</h3>
-                    <p id="">{{ precio }}€</p>
+                    <h3 style="color: rgb(0, 0, 0); padding-left: 2%;">Categoria del Producto</h3>
+                    <p style="color: rgb(0, 0, 0); padding-left: 3%;" id="">{{ categoria }}.</p>
+                    <h3 style="color: rgb(0, 0, 0); padding-left: 2%;">Descripcion del Producto</h3>
+                    <p style="color: rgb(0, 0, 0); padding-left: 3%;" id=""> {{ descripcion }}.</p>
+                    <h3 style="color: rgb(0, 0, 0); padding-left: 2%;">Precio del Producto</h3>
+                    <p style="color: rgb(0, 0, 0); padding-left: 3%;" id="">{{ precio }}€</p>
                     <!-- <h3>Imagen</h3>
                     <img src="{{ img }}" alt="{{ data.img_error }}"> -->
-                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br>
                 </form>
             </tr>
         </tbody>
     </div>
 
     <div class="fother">
-        <p><a href="../pdf/DOSIER PROYECTO FINAL M14.pdf" download target id="colorful-paragraph">Descargar dosier de practica</a></p>
+        <p><a href="../pdf/Dossier Proyecto de m14.pdf" download target id="colorful-paragraph">Descargar dosier de practica</a></p>
     </div>
 </body>
 

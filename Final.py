@@ -63,7 +63,7 @@ def buscar():
         
 
         data = {
-            'titulo': 'Productos',
+            'titulo': 'TodoProductos',
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:',
         }
         return render_template('buscar.html',data=data,descripcion=resultados_desc,precio=resultados_precio,categoria=resultados_cat)
@@ -71,7 +71,7 @@ def buscar():
         # crea una lista llamada que contiene todos los nombres de productos del diccionario productos
         nombres_productos = list(productos.keys())
         data = {
-            'titulo': 'Productos',
+            'titulo': 'TodoProductos',
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:'
         }
         return render_template('index.html', data=data, nombres=nombres_productos)
