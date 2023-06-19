@@ -39,7 +39,8 @@ with open('productos.csv', 'r') as archivo:
 @app.route('/', methods=['GET', 'POST'])
 def buscar():
     if request.method == 'POST':
-        nombre = request.form.get('nombre')
+        nombre = request.form.get('nombre_pro')
+        print(nombre)
         # Ejecutar la consulta SQL
         cursor_1 = mydb.cursor()
         cursor_1.execute(f"SELECT descripcion FROM productos where nombre = '{nombre}'")
@@ -58,7 +59,7 @@ def buscar():
         cat = cursor_3.fetchall()
         resultados_cat = cat[0][0]
         print(resultados_cat)
-
+        
         
 
         data = {
@@ -74,7 +75,5 @@ def buscar():
             'bienvenida': 'Bienvenido, a continuación le mostraremos la lista de productos:'
         }
         return render_template('index.html', data=data, nombres=nombres_productos)
-
-
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

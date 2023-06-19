@@ -23,7 +23,7 @@
         <tbody>
             <tr style="color: white;">
                 <form action="{{ url_for('buscar')}}" method="POST">
-                    <select name="nombre" id="mySelect">
+                    <select name="nombre_pro" id="mySelect">
                         <option value="">"Nombre del producto"</option>
                         {% for nombre in nombres %}
                             <option value="{{ nombre }}">{{ nombre }}</option>

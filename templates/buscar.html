@@ -22,14 +22,14 @@
         <tbody>
             <tr style="color: white;">
                 <form action="{{ url_for('buscar')}}" method="GET">
+                    <h3>Categoria del Producto</h3>
+                    <p id="">{{ categoria }}.</p>
                     <h3>Descripcion del Producto</h3>
                     <p id=""> {{ descripcion }}.</p>
                     <h3>Precio del Producto</h3>
                     <p id="">{{ precio }}€</p>
-                    <h3>Categoria del Producto</h3>
-                    <p id="">{{ categoria }}.</p>
                     <!-- <h3>Imagen</h3>
-                    <img src="" alt="{{ data.img_error }}"> -->
+                    <img src="{{ img }}" alt="{{ data.img_error }}"> -->
                     <br><br><br><br><br><br><br><br><br><br>
                 </form>
             </tr>
