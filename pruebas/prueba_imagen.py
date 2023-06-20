@@ -42,6 +42,7 @@ def buscar():
     if request.method == 'POST':
         nombre = request.form.get('nombre')
         # Ejecutar la consulta SQL
+        # A continuacion las funciones:
         cursor_1 = mydb.cursor()
         cursor_1.execute(f"SELECT descripcion FROM productos where nombre = '{nombre}'")
         desc = cursor_1.fetchall()
@@ -59,12 +60,6 @@ def buscar():
         cat = cursor_3.fetchall()
         resultados_cat = cat[0][0]
         print(resultados_cat)
-
-        cursor_4 = mydb.cursor()
-        cursor_4.execute(f"SELECT categoría FROM productos where nombre = '{nombre}'")
-        img = cursor_3.fetchall()
-        resultados_img = img[0][0]
-        print(resultados_img)
 
         data = {
             'titulo': 'Productos',
